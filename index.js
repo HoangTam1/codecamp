@@ -16,4 +16,5 @@ if (req.url=="/hello"){
   else (req.method=="DELETE")
     res.end('world deleted');
 }
-}).listen(8000);
+})
+server.listen(port, host, () => {console.log(`Server is listening on ${host}:${port}`)});
