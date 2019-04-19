@@ -2,7 +2,7 @@ var http = require('http');
 var url = require('url');
 const host = process.env.HOST;
 const port = process.env.PORT;
-http.createServer(function (req, res) {
+const server =http.createServer(function (req, res) {
 if (req.url=="/hello"){
   if(req.method=="GET")
     res.end('world');
